@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Panel Student</title>
+    <link rel="stylesheet" href="css/aleryify.css" />
+    <link rel="stylesheet" href="css/themes/default.css" />
+
 </head>
 <body>
     <h1>Panel de estudiantes </h1>
@@ -27,7 +31,7 @@
             if($allStudents){
                 foreach($allStudents as $data){
                     print "<tr>";
-                    print "<td>". $data["idStuden"]."</td>";
+                    print "<td>". $data["idStudent"]."</td>";
                     print "<td>". $data["surname"]."</td>";
                     print "<td>". $data["name"]."</td>";
                     print "<td>". $data["dni"]."</td>";
@@ -45,4 +49,5 @@
       </tbody>
     </table>
 </body>
+
 </html>
